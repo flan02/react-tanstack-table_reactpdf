@@ -7,13 +7,20 @@
 import { people } from "../data"
 import Datatable from "./table/DataTable"
 import { columns } from "./table/columns"
+import { ThemeProvider } from "./theme-provider"
 
 
 type Props = {}
 
-const SimpleTable = (props: Props) => {
+const SimpleTable = (_props: Props) => {
   return (
-    <Datatable columns={columns} data={people} />
+    <>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <div className="container py-4">
+          <Datatable columns={columns} data={people} />
+        </div>
+      </ThemeProvider>
+    </>
   )
 }
 

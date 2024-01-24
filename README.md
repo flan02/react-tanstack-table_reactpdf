@@ -16,3 +16,6 @@ Random data generator
 
 # shadcn
 https://ui.shadcn.com/
+
+# More react icons format SVG
+https://lucide.dev/guide/
